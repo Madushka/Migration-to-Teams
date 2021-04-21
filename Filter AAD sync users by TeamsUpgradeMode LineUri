@@ -1,0 +1,4 @@
+#This will filter TeamsUpgradeMode with OnPremEnterpriseVoiceEnabled
+
+Get-CsOnlineUser | ft sipaddress, TeamsUpgradeEffectiveMode, LineUri, OnPremLineUri, *HostingProvider, OnPremEnterpriseVoiceEnabled, HostedVo*, *UserType > C:\Tools\CsGetUsersPlan
+toMovewithLicense.txt
