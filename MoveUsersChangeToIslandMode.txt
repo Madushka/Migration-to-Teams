@@ -1,0 +1,16 @@
+Question - no outgoing when user moved to TeamsOnly and change back to island mode > incoming calls will work 
+Question - Replication time (NEW) - Oneshot 
+
+After users moved to Teams > it will be TeamsOnly > Change it back to Island Mode bulk using script / EnterpriseVoice Enable should be part of it > Script
+ 
+Verify users bulk moved > Hosted, UserType, LineUri, SipAddress > Script -----------> 0
+
+Move-csUser already given -------> 1
+
+Assign dial plan policy, AllowCalling policy, VoiceRouting Policy > Script --------------> 5
+
+Lync admin PS script to bulk $Null > Script ------> 3
+
+Assign in Teams bulk with numbers > Script ----------> 4 DID
+
+Rollback user want to check > LineURI, Sipaddress using script--------> done / 6

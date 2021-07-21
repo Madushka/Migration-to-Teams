@@ -1,0 +1,10 @@
+﻿#This should run on Lync Server PowerShell only in the Lync Pool server directly.
+#Place Userslist.csv add SipAddress which you want to NULL
+
+$Userlist = import-csv .\Userslist.csv
+ForEach ($AllMoveuser in $Userlist)
+    {
+    Set-csUser -Identity $AllMoveUser.SipAddress -LineURI $Null -Verbose
+    }
+
+
